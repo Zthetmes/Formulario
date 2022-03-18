@@ -1,0 +1,104 @@
+:root{
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: 0e639c
+
+}
+figure{
+    position: relative;
+    background-color: #0e639c;
+    
+
+}
+figure img{
+    width: 20vw;
+    height: auto;
+    border-radius: 50%;
+    border: 30px solid #fafafa;
+
+}
+.fondoNormal{
+
+    background-color: #0e639c;
+    transition: 0.6s ease-in-out;
+}
+#asociado {
+   
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    font-size: 5rem;
+    height: auto;
+    margin: 0;
+    display: flex;  
+    align-items: center; 
+    justify-content: center;
+
+}
+#asociado .grupo-postal{
+    position: relative;
+    width: 40px;
+    height: auto;
+    color: #fafafa;
+    
+      
+       
+} 
+#asociado .postal i {
+    position: absolute;
+    
+}
+small{
+    letter-spacing: 1px;
+    color: hsl(0, 59%, 41%);
+}
+h1{
+    color: #0e639c;
+    letter-spacing: 2px;
+}
+#marcador1 {
+    color:rgb(91, 236, 6);
+    
+}
+.fondoMarcador1 {
+    background-color: rgb(131, 131, 131);
+    transition: 0.6s ease-in-out;
+}
+#marcador2 {
+    color:rgb(253, 240, 55));
+    
+}
+.fondoMarcador2 {
+    background-color: rgb(194,4,101);
+    transition: 0.6s ease-in-out;
+}
+#marcador3 {
+    color:rgb(190, 40, 170);
+    
+}
+.fondoMarcador3 {
+    background-color: rgb(29, 170, 206);
+    transition: 0.6s ease-in-out;
+}
+#marcador4 {
+    color:rgb(59, 59, 59);
+    
+}
+.fondoMarcador4 {
+    background-color: rgb(255, 177, 31);
+    transition: 0.6s ease-in-out;
+}
+#marcador5 {
+    color:rgb(221, 255, 72);
+    
+}
+.fondoMarcador5 {
+    background-color: rgb(161, 15, 15);
+    transition: 0.6s ease-in-out;
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/Freecodecamp/formulario/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Formulario</title>
+  </head>
+  <body>
+      <div class="conteiner">
+          <div class="py-5 text-center">
+            <figure id="imagen">
+                <img src="/Freecodecamp/formulario/img/encargado.jpg" alt="">
+            </figure>
+
+            <h1 id="title">Formulario de contacto</h1><br>
+            <p id="description" class="lead">Rellenar los campos, el encargado de contactos tiene pocas pulgas</p>
+        </div>
+      </div>
+      <div class="container">
+          <div class="row">
+            
+            <div class="col-lg-5 fondoNormal" id="asociado">
+                <div class="grupo-postal">
+                    <div class="marcador"><i id="marcador1"></i></div>
+                    <div class="marcador"><i id="marcador3"></i></div>
+                    <div class="marcador"><i id="marcador2"></i></div>
+                    <div class="marcador"><i id="marcador4"></i></div>
+                    <div class="marcador"><i id="marcador5"></i></div>
+                </div>
+            </div>
+
+           
+            <div class="col-lg-7">
+
+                <form novalidate id="survey-form" class="form-row">
+                    <h4 class="mb-3">Datos personales</h4>
+                <div class="col-7 mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="name" class="form-control" placeholder="Thor o Pakkun" required><br>
+                    <div class="invalid-feedback">Escribi un nombre</div>
+                    <small id="errorName">&nbsp;</small>
+                </div>  
+                <div class="col-7 mb-3">
+                    <label for="email" class="form-label">Direccion de e-mail:</label><br>
+                    <input type="email" name="email" id="email" placeholder="Pakkun@french.com" required><br>
+                    <small id="errorEmail">&nbsp;</small>
+                </div>
+                <div class="col-7 mb-3">
+                    <label for="dropdown" class="form-label">País</label>
+                    <input class="form-control" list="datalistOptions" id="dropdown" placeholder="Selecciona tu país...">
+                    <datalist id="datalistOptions">
+                        <option value="Argentina"></option>
+                        <option value="Bolivia"></option>
+                        <option value="Brasil"></option>
+                        <option value="Chile"></option>
+                        <option value="Colombia"></option>
+                        <option value="Ecuador"></option>
+                        <option value="Paraguay"></option>
+                        <option value="Peru"></option>
+                        <option value="Venezuela"></option>
+                        <option value="España"></option>
+                    </datalist>
+                </div>
+                <div class="col-7 mb-3">
+                    <label for="cel-phone" class="form-label">Numero de teléfono</label><br>
+                    <input type="number" name="cel-phone" id="number" min="1000000" max="99999999" required><br>
+                    <small id="errorNumber">&nbsp;</small>
+                </div>
+                <div class="form-check mb-3">
+                    <h6 class="row">Género</h6>
+                    <label for="sexo" class="form-check-label mb-1">Femenino</label>
+                    <input type="radio" name="sexo" id="fem" ><br>
+                    <label for="sexo" class="form-check-label mb-1">Masculino</label>
+                    <input type="radio" name="sexo" id="masc" >
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Mi vida es tranquila" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Mi vida es tranquila, no necesito ningun Pakkun
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Mi vida con un Pakkun es un desastre" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Mi vida con un Pakkun es un desastre...
+                    </label>
+                    <small id="errorCom">&nbsp;</small>
+                  </div>
+                  
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Deja tu comentario" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comentarios</label>
+                  </div>
+
+                  <div class="col-12 mt-5 ">
+                    <button class="btn btn-primary" id="submit" type="submit">Enviar</button>
+                  </div>
+    
+    
+    
+                </form>
+                
+                
+            </div>
+           
+            
+            </div>
+            <br><br><br><br><br>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/Freecodecamp/formulario/java.js"></script>
+ 
+  </body>
+</html>
